@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: backend-payment
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:local}
+  config:
+    import: optional:file:.env[.properties],optional:file:./payment-hom.local.yml,optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888}
