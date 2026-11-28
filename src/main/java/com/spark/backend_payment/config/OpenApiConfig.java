@@ -11,10 +11,11 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI backendPaymentOpenApi() {
         return new OpenAPI()
-                .info(
-                        new Info()
-                                .title("ReSpark Payment API")
-                                .description("ReSpark 결제 서비스 API")
-                                .version("v1"));
+            .info(
+                new Info()
+                    .title("ReSpark Payment API")
+                    .description("ReSpark 결제 서비스 API")
+                    .version("v1")
+            );
     }
 }
